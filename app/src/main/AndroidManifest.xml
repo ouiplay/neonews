@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.aplicacionesutiles.neonews" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Activities.SplashScreenActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.Tuto1"
+            android:label="@string/title_activity_tuto1" >
+        </activity>
+        <activity
+            android:name=".Activities.Tuto2"
+            android:label="@string/title_activity_tuto2" >
+        </activity>
+        <activity
+            android:name=".Activities.Tuto3"
+            android:label="@string/title_activity_tuto3" >
+        </activity>
+        <activity
+            android:name=".Activities.MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Activities.DetalleNoticia"
+            android:label="@string/title_activity_detalle_noticia" >
+        </activity>
+        <activity
+            android:name=".Activities.Hotnews"
+            android:label="@string/title_activity_hotnews" >
+        </activity>
+    </application>
+
+</manifest>
